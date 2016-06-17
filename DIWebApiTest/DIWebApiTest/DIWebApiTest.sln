@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DIWebApiTest", "DIWebApiTest\DIWebApiTest.csproj", "{D3A780D2-0577-47EB-AAC0-5CACD8154DBE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DIWebApiTest.Tests", "DIWebApiTest.Tests\DIWebApiTest.Tests.csproj", "{CEEE9DA1-42D6-4474-AAA9-1F8E6933506D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D3A780D2-0577-47EB-AAC0-5CACD8154DBE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3A780D2-0577-47EB-AAC0-5CACD8154DBE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3A780D2-0577-47EB-AAC0-5CACD8154DBE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3A780D2-0577-47EB-AAC0-5CACD8154DBE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CEEE9DA1-42D6-4474-AAA9-1F8E6933506D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CEEE9DA1-42D6-4474-AAA9-1F8E6933506D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CEEE9DA1-42D6-4474-AAA9-1F8E6933506D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CEEE9DA1-42D6-4474-AAA9-1F8E6933506D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
