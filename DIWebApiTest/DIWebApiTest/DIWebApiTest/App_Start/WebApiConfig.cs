@@ -2,7 +2,6 @@
 using Autofac;
 using Autofac.Integration.WebApi;
 using System.Reflection;
-using DIWebApiTest.Configurations;
 
 namespace DIWebApiTest
 {
@@ -14,6 +13,7 @@ namespace DIWebApiTest
             RegisterComponents(config);
 
             config.Formatters.Remove(config.Formatters.XmlFormatter);
+            config.Formatters.JsonFormatter.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore;
 
             // Web API routes
             config.MapHttpAttributeRoutes();
@@ -29,8 +29,8 @@ namespace DIWebApiTest
         {
             var builder = new ContainerBuilder();
 
-            ModelConfigs.Register(builder);
-
+            builder.RegisterAssemblyModules(Assembly.GetExecutingAssembly());
+            
             builder.RegisterApiControllers(Assembly.GetExecutingAssembly());
             var container = builder.Build();
 

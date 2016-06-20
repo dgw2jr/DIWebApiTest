@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DIWebApiTest", "DIWebApiTes
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DIWebApiTest.Tests", "DIWebApiTest.Tests\DIWebApiTest.Tests.csproj", "{CEEE9DA1-42D6-4474-AAA9-1F8E6933506D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TypeScriptHTMLApp1", "TypeScriptHTMLApp1\TypeScriptHTMLApp1.csproj", "{37C63B7D-4645-451D-953D-BB8D9F865BBC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{CEEE9DA1-42D6-4474-AAA9-1F8E6933506D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CEEE9DA1-42D6-4474-AAA9-1F8E6933506D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CEEE9DA1-42D6-4474-AAA9-1F8E6933506D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{37C63B7D-4645-451D-953D-BB8D9F865BBC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{37C63B7D-4645-451D-953D-BB8D9F865BBC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{37C63B7D-4645-451D-953D-BB8D9F865BBC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{37C63B7D-4645-451D-953D-BB8D9F865BBC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
