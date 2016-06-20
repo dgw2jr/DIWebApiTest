@@ -17,6 +17,7 @@ namespace DIWebApiTest.Configurations
             builder.RegisterType<AddressConfig>().As<EntityTypeConfiguration<Address>>().InstancePerRequest();
             builder.RegisterType<IndividualPartnerConfig>().As<EntityTypeConfiguration<IndividualPartner>>().InstancePerRequest();
             builder.RegisterType<BusinessPartnerConfig>().As<EntityTypeConfiguration<BusinessPartner>>().InstancePerRequest();
+            builder.RegisterType<PartnerConfig>().As<EntityTypeConfiguration<Partner>>().InstancePerRequest();
             builder.RegisterType<OperationConfig>().As<EntityTypeConfiguration<Operation>>().InstancePerRequest();
 
             builder.Register(c => new Migrations.Configuration()).AsImplementedInterfaces().InstancePerRequest();

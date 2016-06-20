@@ -10,6 +10,7 @@ namespace DIWebApiTest.Models
         private readonly EntityTypeConfiguration<Address> _addressConfig;
         private readonly EntityTypeConfiguration<IndividualPartner> _individualPartnerConfig;
         private readonly EntityTypeConfiguration<BusinessPartner> _businessPartnerConfig;
+        private readonly EntityTypeConfiguration<Partner> _partnerConfig;
         private readonly EntityTypeConfiguration<Operation> _operationConfig;
         
         public OperationContext() : base("name=OperationContext") { }
@@ -20,6 +21,7 @@ namespace DIWebApiTest.Models
             EntityTypeConfiguration<Address> addressConfig,
             EntityTypeConfiguration<IndividualPartner> individualPartnerConfig,
             EntityTypeConfiguration<BusinessPartner> businessPartnerConfig,
+            EntityTypeConfiguration<Partner> partnerConfig,
             EntityTypeConfiguration<Operation> operationConfig)
             : this()
         {
@@ -28,6 +30,7 @@ namespace DIWebApiTest.Models
             _addressConfig = addressConfig;
             _individualPartnerConfig = individualPartnerConfig;
             _businessPartnerConfig = businessPartnerConfig;
+            _partnerConfig = partnerConfig;
             _operationConfig = operationConfig;
 
             Database.SetInitializer(initializer);
@@ -38,8 +41,9 @@ namespace DIWebApiTest.Models
             modelBuilder.Configurations.Add(_regionConfig);
             modelBuilder.Configurations.Add(_countryConfig);
             modelBuilder.Configurations.Add(_addressConfig);
-            modelBuilder.Configurations.Add(_individualPartnerConfig);
+            //modelBuilder.Configurations.Add(_individualPartnerConfig);
             modelBuilder.Configurations.Add(_businessPartnerConfig);
+            modelBuilder.Configurations.Add(_partnerConfig);
             modelBuilder.Configurations.Add(_operationConfig);
 
             base.OnModelCreating(modelBuilder);
@@ -47,6 +51,7 @@ namespace DIWebApiTest.Models
 
         public virtual DbSet<Operation> Operations { get; set; }
 
+        public virtual DbSet<Partner> Partners { get; set; }
         public virtual DbSet<IndividualPartner> IndividualPartners { get; set; }
         public virtual DbSet<BusinessPartner> BusinessPartners { get; set; }
 

@@ -8,7 +8,8 @@ namespace DIWebApiTest.Configurations
     {
         public BusinessPartnerConfig()
         {
-            ToTable("Business");
+            HasMany(b => b.Contacts).WithMany()
+                .Map(c => c.MapLeftKey("BusinessId").MapRightKey("PersonId").ToTable("BusinessContacts"));
         }
     }
 

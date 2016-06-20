@@ -162,6 +162,7 @@
     <Compile Include="Configurations\CountryConfig.cs" />
     <Compile Include="Configurations\IndividualPartnerConfig.cs" />
     <Compile Include="Configurations\OperationConfig.cs" />
+    <Compile Include="Configurations\PartnerConfig.cs" />
     <Compile Include="Configurations\RegionConfig.cs" />
     <Compile Include="Controllers\AddressesController.cs" />
     <Compile Include="Controllers\CountriesController.cs" />
