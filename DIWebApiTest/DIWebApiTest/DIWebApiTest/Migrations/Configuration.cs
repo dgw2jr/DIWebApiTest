@@ -37,7 +37,7 @@ namespace DIWebApiTest.Migrations
 
             var addresses = new List<Address>
             {
-                new StreetAddress { City = "Ankeny", Line1 = "2045 NW Hickory Lane", Region = regions.First(r => r.Name == "Iowa") },
+                new StreetAddress { City = "Ankeny", Line1 = "1234 NW Hickory Lane", Region = regions.First(r => r.Name == "Iowa") },
                 new MailingAddress { City = "Dixon", Line1 = "PO Box 1234", Region = regions.First(r => r.Name == "Iowa") }
             };
 
